@@ -1,0 +1,10 @@
+Demo.py line 21
+"""There does exist a formula to find the specific range will update this when
+I find  it"""
+
+the charge on the electret decreases so we will need to specify the initial chargeArray
+and subsequently reduce it with each decay
+  Unless we are focussing on the energy lost and not the energy llost by the electret???
+
+should eTotal be a measure of the net possible energy or the net possible energy
+that the particle could possible travel
