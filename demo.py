@@ -40,7 +40,7 @@ eTotal = []
 count  = []
 # this specifies the number of particles that will be let loose in the detector
 # to find the number of energy lost by the radon during decay
-for i in range(100):
+for i in range(1000):
     # this is the first test case just to help us not to work with empty arrays
     # and get errors in the first append
     if(eTotal == []):

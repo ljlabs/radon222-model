@@ -15,9 +15,9 @@ def vectorAddition(A, B):
 # this converts spherical coordinates to cartesian coordinates
 def sperical_to_cartesian(r, theta, phi):
     # this uses the generic spherical to cartesian formula and returns it as a 3D vector
-    return([r*sin(theta)*cos(phi),
-        r*sin(theta)*sin(phi),
-        r*cos(theta)])
+    return([r*sin(phi)*cos(theta),
+        r*sin(phi)*sin(theta),
+        r*cos(phi)])
 # this finds the length of the vector as the distance from the origin to that 3d position
 def sizeOf(vect):
     return(sqrt((vect[0]**2) + (vect[1]**2) + (vect[2]**2)))

@@ -36,6 +36,9 @@ class Alpha:
         """we check the new position of the alpha particle after it has moved deltaR cm"""
         # its postion after being moved
         positionVectorAlphaHasTraveled =operations.sperical_to_cartesian(deltaR, self.theta, self.phi)
+        """this is the specific case where the alpha particle moves below the base of the hemisphere of the L-chamber"""
+        if(positionVectorAlphaHasTraveled[2] < 0): # if the particle moves below the base
+            return False
         # its displacement vector equivelent to vector from origin to final position
         displacement_vector = operations.vectorAddition(initialPositionVector, positionVectorAlphaHasTraveled)
         if(operations.sizeOf(displacement_vector) < max_r): # check if the displacement vector
